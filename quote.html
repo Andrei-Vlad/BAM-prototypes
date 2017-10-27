@@ -1,0 +1,107 @@
+---
+title: Request Quote
+layout: default
+---
+
+  <div id="content" class="main_div">
+<script type="text/javascript" src="/scripts/rfq.js"></script>
+
+<p>Please complete this form to request a quotation.</p>
+
+<form action="/scripts/rfq.py" method="POST" enctype="multipart/form-data">
+<table>
+<tbody>
+<tr><th colspan=2 class="title">Contact Information</th></tr>
+<tr>
+    <th>Name</th>
+    <td colspan="2"><input type="text" name="name" size="50"></td>
+</tr>
+<tr>
+    <th>Email</th>
+    <td colspan="2"><input type="email" name="email" size="50"></td>
+</tr>
+<tr>
+    <th>Phone Number</th>
+    <td colspan="2"><input type="text" name="phone" size="50"></td>
+</tr>
+<tr>
+    <th>Company Name</th>
+    <td colspan="2"><input type="text" name="cname" size="50"></td>
+</tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr>
+    <th>Quantities to Quote</th>
+    <td colspan="2"><input type="text" name="qty" size="25"></td>
+</tr>
+<tr>
+    <th>Lead Times to Quote</th>
+    <td colspan="2"><input type="text" name="leadtime" size="25"></td>
+</tr>
+<tr>
+    <th>Expected Start Date</th>
+    <td colspan="2"><input type="text" name="date" size="25"></td>
+</tr>
+<tr>
+    <th colspan="2" class="title">Services Required</th>
+</tr>
+<tr>
+    <th class="help">PCB assembly</th>
+    <td class="help"><input type="checkbox" name="assy" checked="checked"></td>
+    <td id="help" rowspan="4"></td>
+</tr>
+<tr>
+    <th>Component procurement</th>
+    <td><input type="checkbox" name="parts" class="dependent"></td>
+</tr>
+<tr>
+    <th>PCB procurement</th>
+    <td><input type="checkbox" name="pcbs" class="dependent"></td>
+</tr>
+
+
+
+
+<tr>
+    <th>Other</th>
+    <td><input type="checkbox" name="other"></td>
+</tr>
+<!---tr>
+    <td>Add file</td>
+    <td><input type="button" name="addfile"></td>
+</tr-->
+<tr>
+    <th>Project Files</th>
+    <td><input type="file" name="file"></td>
+</tr>
+<tr>
+    <th class="top">Special Instructions</th>
+    <td><textarea rows="5" cols="40" name="comments"></textarea></td>
+</tr>
+<tr>
+    <td></td>
+    <td><input type="submit" value="Request Quote"></td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<p>Please upload a single (zipped) archive that contains the following files:
+</p>
+<ul>
+    <li>BOM - should contain reference designators, part numbers, package description, etc
+    <li>gerber files (RS-274X only)
+        <!--ul>
+            <li>top copper
+            <li>top solder mask
+            <li>top silk screen
+            <li>bottom copper
+            <li>bottom solder mask
+            <li>bottom silk screen
+            <li>board outline or fab drawing
+            <li>drill file
+        </ul-->
+    <li>XYRS - should contain reference designator, x and y location, side and rotation
+</ul>
+
+
+  </div>

@@ -1,0 +1,151 @@
+html{
+	margin: 0;
+	padding: 0;
+	font: arial;
+}
+.current{
+	color: white;
+    background-color: lightblue;
+}
+
+/*Here is Andrei`s css*/
+
+a:visited, a:link {
+    text-decoration: none;
+}
+a img{
+    border:none;
+}
+pre{
+    white-space:pre-wrap;
+}
+.main_div{
+    width:8in;
+    margin-left:auto;
+    margin-right:auto;
+    padding:5px;
+}
+
+.menu a, .current_page{
+    padding: 5px;
+    color:DarkBlue;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.menu a:hover {
+    color: white;
+    background-color:blue;
+}
+.menu a:visited, a:link {
+    text-decoration: none;
+}
+.menu{
+    font-weight:bold;
+}
+.menu .current_page, #content{ background:lightBlue;}
+.menu .current_page{color:black;}
+#top{
+    color:white;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    background:url("/images/someboards.jpeg");
+    background-position-x:270px;
+}
+#t1
+{
+    font-size:3em;
+    display:inline;
+}
+#t2
+{
+    font-size:2em;
+    clear:left;
+}
+#top_address
+{
+    float:right;
+    text-align:right;
+}
+#menu1, table.w_border th{
+    background-color:#2E9AFE;
+}
+
+div.summary{
+    /*border-radius:15px;*/
+    border-style:solid;
+/*    border-left-style:none;
+    border-right-style:none;
+*/
+    border-color:#2E9AFE;
+    display:inline-table;
+    border-width:2px;
+    width:46%;
+    padding:1%;
+    margin:0.5%;
+    height:250px;
+}
+div.summary h1{
+/*    background:blue;*/
+    font-size:1.3em;
+    text-align:center;
+}
+div.bottom_left{
+    border-bottom-left-radius:15px;
+}
+div.bottom_right{
+    border-bottom-right-radius:15px;
+}
+#content{
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+body{
+    background-color:#CEE3F6;
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+#content a:hover {
+    color: black;
+    background-color:orange;
+}
+h1{
+    font-size:1.5em;
+}
+table{
+    border-collapse:collapse;
+}
+td,th{
+    padding:2px;
+    vertical-align:top;
+}
+table.w_border td, table.w_border th{border:1px solid black;}
+table.w_border td.hidden, table.w_border th.hidden{
+    border-style:none;
+    background:none;
+}
+table.standard th{
+    text-align:left;
+    padding-right:5px;
+    white-space:nowrap;
+}
+table.standard td{
+    padding-right:5px;
+}
+table.right td{
+    text-align:right;
+}
+.onlyprint{
+    display:none;
+    visibility:hidden;
+}
+@media print
+{
+    .menu{display:none;}
+    .noprint{display:none;}
+    .onlyprint{
+        display:inline;
+        visibility:visible;
+    }
+    input{display:none;}
+}

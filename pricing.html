@@ -1,0 +1,130 @@
+---
+title: Pircing
+layout: default
+---
+
+  <div id="content" class="main_div">
+<script type="text/javascript" src="/scripts/pricing.js"></script>
+
+<h1>PCB Assembly Pricing</h1>
+<p>
+Use this online calculator for a close estimate of assembly cost, 
+however, please ask for a quotation to receive an exact price.
+</p>
+
+
+<table>
+<tbody>
+<tr>
+<td>
+
+    <table></body>
+    <tr>
+      <td><label for="smts">SMT Placements (per pcb)</label></td>
+      <td><input type="text" id="smts" size="3"></td>
+    </tr>
+    <tr>
+      <td><label for="smt_lines">SMT BOM lines</label></td>
+      <td><input type="text" id="smt_lines" size="3"></td>
+    </tr>
+    <tr>
+      <td><label for="ths">Through-hole components (per pcb)</label></td>
+      <td><input type="text" id="ths" size="3"></td>
+    </tr>
+    <tr>
+      <td><label for="pcbs">Number of PCB's</label></td>
+      <td><input type="text" id="pcbs" size="3"></td>
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr>
+      <td><label for="sides">Two sided</label></td>
+      <td><input type="checkbox" id="sides"></td>
+    </tr>
+    <tr>
+      <td>Stencil</td>
+      <td>
+        <input type="radio" name="stencil" value="metal" checked="checked" id="stencil_metal"><label for="stencil_metal">Metal</label><br>
+        <input type="radio" name="stencil" value="plastic" id="stencil_plastic"><label for="stencil_plastic">Plastic</label><br>
+        <input type="radio" name="stencil" value="none" id="stencil_none"><label for="stencil_none">None</label></br>
+      </td>
+    </tr>
+    </tbody></table>
+</td>
+
+
+<td width="25px"></td>
+
+<td>
+    <table class="w_border right quote"><tbody>
+        <tr>
+            <td class="hidden">
+            </td>
+            <th colspan=3>Lead Time</th>
+        </tr>
+        <tr>
+          <th class="hidden"></th>
+          <th class="leadtime col1">&nbsp;</th>
+          <th class="leadtime col2">&nbsp;</th>
+          <th class="leadtime col3">&nbsp;</th>
+        </tr>
+        <tr>
+          <th>Assembly Cost</th>
+          <td id="price_1day" class="output price col1">&nbsp;</td>
+          <td id="price_2day" class="output price col2"> </td>
+          <td id="price_3day" class="output price col3"> </td>
+        </tr>
+        <tr>
+          <th>Stencil</th>
+          <td id="stencil_1day" class="output stencil col1">&nbsp;</td>
+          <td id="stencil_2day" class="output stencil col2"> </td>
+          <td id="stencil_3day" class="output stencil col3"> </td>
+        </tr>
+        <tr>
+          <th>Shipping</th>
+          <td id="shipping_1day" class="output shipping col1">&nbsp;</td>
+          <td id="shipping_2day" class="output shipping col2"> </td>
+          <td id="shipping_3day" class="output shipping col3"> </td>
+        </tr>
+        <tr>
+          <th>Total Price</th>
+          <td id="total_1day" class="output total col1">&nbsp;</td>
+          <td id="total_2day" class="output total col2"> </td>
+          <td id="total_3day" class="output total col3"> </td>
+        </tr>
+        <tr>
+            <td class="hidden" colspan=4>
+              <input type="radio" name="currency" value="eur" id="currency_eur" checked="checked"><label for="currency_eur">EUR</label>
+              <input type="radio" name="currency" value="gbp" id="currency_gbp"><label for="currency_gbp">GBP</label>
+              <input type="radio" name="currency" value="usd" id="currency_usd"><label for="currency_usd">USD</label>
+            </td>
+        </tr>
+     </tbody></table>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+<p>
+Lead time is the number of working days that pass from the time all materials are received to the time the final assembly is shipped.
+</p>
+<p>
+Shipping as quoted is via UPS Express (1-2 days in transit) to Western Europe and the USA.
+Lower costs (to Europe) are possible via DPD.
+</p>
+<h1>Turn-Key Services</h1>
+BAM Prototypes offers full or partial turn-key services.
+In keeping with our tradition of offering exellent value, 
+we can procure components and pcb's at cost.
+  </div>
