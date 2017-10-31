@@ -1,49 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>BAM-{{page.title}}</title>
-	<script type="text/javascript" src="/assets/scripts/jquery.js"></script>
+	<script type="text/javascript" src="../assets/scripts/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="sass/main.css">
+	{% include analytics.html %}
 </head>
 <body>
 	<header>
-
-
-		<div id="top" class="main_div" style="background:url(/assets/images/board_in_machine.jpeg)">
-		<!-- <h1>{{page.title}}</h1>	 -->
-		    <table width="100%">
-		        <tbody>
-		            <tr>
-		                <td>
-		                    <a href="/">
-		                        <img src="/assets/images/BAMLogo-nobox.png" alt="BAM Prototypes" class="noprint">
-		                        <img src="/assets/images/BAMLogo.png" alt="BAM Prototypes" class="onlyprint">
-		                    </a>
-		                </td>
-		                <td>
-		    <!-- <div id="top_address" class="onlyprint">
-		      str. Botizuli Nr. 9<br />
-		      Satu Mare, 440101<br />
-		      +40 361.086.115<br /><br />
-		      www.bamproto.com
-		    </div> -->
-		                </td>
-		            </tr>
-		    <!--div id="t2">Engineering Services</div-->
-		        </tbody>
-		    </table>
-		</div>
-		<nav>
-			<div id="menu1" class="main_div menu">
-				<a href="pricing.html" class="{% if page.url =='/pricing.html' %}current{% endif %}">Pricing</a>
-				<a href="capabilities.html" class="{% if page.url =='/capabilities.html' %}current{% endif %}">Capabilities</a>
-				<a href="quote.html" class="{% if page.url =='/quote.html' %}current{% endif %}">Request Quote</a>
-				<a href="about.html" class="{% if page.url =='/about.html' %}current{% endif %}">About</a>
-			</div>
-
-		</nav>
+			{% include navigation.html %}
+		<!-- {% include header.html %} -->
 	</header>
 
 	<main>	
@@ -58,14 +25,5 @@
 
 </body>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-57686537-1', 'auto');
-            ga('send', 'pageview');
-</script>
 
 </html>

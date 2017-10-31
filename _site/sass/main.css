@@ -1,151 +1,82 @@
 html{
-	margin: 0;
-	padding: 0;
-	font: arial;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, sans-serif;
+    /*background: rgba(0,0,0, 0,4) url("../assets/images/board.jpeg") repeat fixed center;*/
 }
 .current{
-	color: white;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.6);
 }
-
-/*Here is Andrei`s css*/
 
 a:visited, a:link {
     text-decoration: none;
 }
-a img{
-    border:none;
-}
-pre{
-    white-space:pre-wrap;
-}
+
+/*Here is Andrei`s css*/
+
 .main_div{
-    width:8in;
-    margin-left:auto;
-    margin-right:auto;
-    padding:5px;
+    background-color: #ccc;
+    width:1300px;
+    margin: 0px;
+    align-content: center;
+
 }
 
-.menu a, .current_page{
-    padding: 5px;
-    color:DarkBlue;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
-}
-.menu a:hover {
+.menu a{
+    padding:0px 20px 0px 20px;
+    font-size: 24px;
+    text-transform: uppercase;
     color: white;
-    background-color:blue;
+    top:10px;
+    padding:;
 }
-.menu a:visited, a:link {
-    text-decoration: none;
+.menu a:hover{
+    background-color: rgba(0, 0, 0, 0.65);
 }
-.menu{
-    font-weight:bold;
-}
-.menu .current_page, #content{ background:lightBlue;}
-.menu .current_page{color:black;}
-#top{
-    color:white;
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
-    background:url("/images/someboards.jpeg");
-    background-position-x:270px;
-}
-#t1
-{
-    font-size:3em;
-    display:inline;
-}
-#t2
-{
-    font-size:2em;
-    clear:left;
-}
-#top_address
-{
-    float:right;
-    text-align:right;
-}
-#menu1, table.w_border th{
-    background-color:#2E9AFE;
+nav{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index:1;
+    left:-10px;
+    float: right;
+    
 }
 
-div.summary{
-    /*border-radius:15px;*/
-    border-style:solid;
-/*    border-left-style:none;
-    border-right-style:none;
-*/
-    border-color:#2E9AFE;
-    display:inline-table;
-    border-width:2px;
-    width:46%;
-    padding:1%;
-    margin:0.5%;
-    height:250px;
-}
-div.summary h1{
-/*    background:blue;*/
-    font-size:1.3em;
-    text-align:center;
-}
-div.bottom_left{
-    border-bottom-left-radius:15px;
-}
-div.bottom_right{
-    border-bottom-right-radius:15px;
-}
-#content{
-    border-bottom-left-radius:15px;
-    border-bottom-right-radius:15px;
+main{
+    position: absolute;
+    top:40%;
+    padding: 0px;
+    margin: 0px;
 }
 
-body{
-    background-color:#CEE3F6;
-    font-family:Tahoma, Geneva, sans-serif;
+nav .onlyprint {
+    position: absolute;
+    left:60px;
+    top: 10px;
+
+
+}
+.nav_bar{
+    top:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
-#content a:hover {
-    color: black;
-    background-color:orange;
+.nav_bar:hover{
+    background-color: rgba(0, 0, 0, 0.51);
 }
-h1{
-    font-size:1.5em;
+
+
+#bg_nav{
+    display: block; 
+    width: 100%; 
+    -webkit-filter: opacity(.2);
+    filter: opacity(.5);
+    position: absolute;
+    z-index: -3;    
+    top:-60px;
 }
-table{
-    border-collapse:collapse;
-}
-td,th{
-    padding:2px;
-    vertical-align:top;
-}
-table.w_border td, table.w_border th{border:1px solid black;}
-table.w_border td.hidden, table.w_border th.hidden{
-    border-style:none;
-    background:none;
-}
-table.standard th{
-    text-align:left;
-    padding-right:5px;
-    white-space:nowrap;
-}
-table.standard td{
-    padding-right:5px;
-}
-table.right td{
-    text-align:right;
-}
-.onlyprint{
-    display:none;
-    visibility:hidden;
-}
-@media print
-{
-    .menu{display:none;}
-    .noprint{display:none;}
-    .onlyprint{
-        display:inline;
-        visibility:visible;
-    }
-    input{display:none;}
-}
+/*#menu1{
+    background: url("/assets/images/connector.jpeg") repeat fixed center;
+}*/
