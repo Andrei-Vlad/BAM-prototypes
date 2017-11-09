@@ -4,26 +4,29 @@
 	<meta charset="utf-8">
 	<title>BAM-Request Quote</title>
 	<script type="text/javascript" src="../assets/scripts/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="sass/main.css">
+	<link rel="stylesheet" type="text/css" href="../sass/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../sass/quote.css">
 	
 </head>
 <body>
 	<header>
-			<a href="/">
-  <!--   <img src="../assets/images/BAMLogo-nobox.png" alt="BAM Prototypes" class="noprint"> -->
-    <img src="../assets/images/BAMLogo.png" alt="BAM Prototypes" class="onlyprint">
-</a>
-<img src="../assets/images/board.jpeg" id="bg_nav">
-<nav class="nav_bar">
-<div id="menu1" class=" menu">
-	<a href="/">Home</a>
-	<a href="pricing.html" class="">Pricing</a>
-	<a href="capabilities.html" class="">Capabilities</a>
-	<a href="quote.html" class="current">Request Quote</a>
-	<a href="about.html" class="">About</a>
-</div>
-</nav>
+				<img src="../assets/images/4.jpeg" id="bg_nav"> 
 
+	<nav class=" navbar navbar-light" style="background-color: rgba(240,255,255, 0.3);">
+	<a class="navbar-brand" href="/">
+	  <!--   <img src="../assets/images/BAMLogo-nobox.png" alt="BAM Prototypes" class="noprint"> -->
+	    <img src="../assets/images/BAMLogo-nobox.png" alt="BAM Prototypes"  width="110" height="60" class="img_logo" alt=""	>
+	</a>
+		<div id="menu1" class=" menu">
+			<a href="pricing.html" class="">Pricing</a>
+			<a href="capabilities.html" class="">Capabilities</a>
+			<a href="quote.html" class="current">Request Quote</a>
+			<a href="about.html" class="">About</a>
+		</div>
+	</nav>
+
+	<div class="logo-mid d-flex p-2 align-bottom"><h2 class="display-2 mx-auto ">Your Logo is here</h2></div>
 		<!-- 
 
 		<div id="top" class="main_div" style="background:url(/assets/images/board_in_machine.jpeg)">
@@ -56,7 +59,7 @@
  -->
 	</header>
 
-	<main>	
+	<main class="container-fluid">	
 
 		  <div id="content" class="main_div">
 <script type="text/javascript" src="/assets/scripts/rfq.js"></script>
@@ -66,7 +69,7 @@
 <form action="/scripts/rfq.py" method="POST" enctype="multipart/form-data">
 <table>
 <tbody>
-<tr><th colspan=2 class="title">Contact Information</th></tr>
+<tr><th colspan=2 class="title"><h3>Contact Information<h3></th></tr>
 <tr>
     <th>Name</th>
     <td colspan="2"><input type="text" name="name" size="50"></td>
@@ -139,27 +142,27 @@
 </tbody>
 </table>
 </form>
+        <div class="alert alert-secondary warn_bottom" >
+            <p>Please upload a single (zipped) archive that contains the following files:
+            </p>
+            <ul>
+                <li>BOM - should contain reference designators, part numbers, package description, etc
+                <li>gerber files (RS-274X only)
+                    <!--ul>
+                        <li>top copper
+                        <li>top solder mask
+                        <li>top silk screen
+                        <li>bottom copper
+                        <li>bottom solder mask
+                        <li>bottom silk screen
+                        <li>board outline or fab drawing
+                        <li>drill file
+                    </ul-->
+                <li>XYRS - should contain reference designator, x and y location, side and rotation
+            </ul>
+        </div>
 
-<p>Please upload a single (zipped) archive that contains the following files:
-</p>
-<ul>
-    <li>BOM - should contain reference designators, part numbers, package description, etc
-    <li>gerber files (RS-274X only)
-        <!--ul>
-            <li>top copper
-            <li>top solder mask
-            <li>top silk screen
-            <li>bottom copper
-            <li>bottom solder mask
-            <li>bottom silk screen
-            <li>board outline or fab drawing
-            <li>drill file
-        </ul-->
-    <li>XYRS - should contain reference designator, x and y location, side and rotation
-</ul>
-
-
-  </div>
+    </div>
 
 	</main>
 
@@ -168,6 +171,8 @@
 	</footer>
 
 </body>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </html>

@@ -1,6 +1,8 @@
 ---
 title: Request Quote
 layout: default
+bg_img: 4.jpeg
+css: quote.css
 ---
 
   <div id="content" class="main_div">
@@ -11,7 +13,7 @@ layout: default
 <form action="/scripts/rfq.py" method="POST" enctype="multipart/form-data">
 <table>
 <tbody>
-<tr><th colspan=2 class="title">Contact Information</th></tr>
+<tr><th colspan=2 class="title"><h3>Contact Information<h3></th></tr>
 <tr>
     <th>Name</th>
     <td colspan="2"><input type="text" name="name" size="50"></td>
@@ -84,24 +86,24 @@ layout: default
 </tbody>
 </table>
 </form>
+        <div class="alert alert-secondary warn_bottom" >
+            <p>Please upload a single (zipped) archive that contains the following files:
+            </p>
+            <ul>
+                <li>BOM - should contain reference designators, part numbers, package description, etc
+                <li>gerber files (RS-274X only)
+                    <!--ul>
+                        <li>top copper
+                        <li>top solder mask
+                        <li>top silk screen
+                        <li>bottom copper
+                        <li>bottom solder mask
+                        <li>bottom silk screen
+                        <li>board outline or fab drawing
+                        <li>drill file
+                    </ul-->
+                <li>XYRS - should contain reference designator, x and y location, side and rotation
+            </ul>
+        </div>
 
-<p>Please upload a single (zipped) archive that contains the following files:
-</p>
-<ul>
-    <li>BOM - should contain reference designators, part numbers, package description, etc
-    <li>gerber files (RS-274X only)
-        <!--ul>
-            <li>top copper
-            <li>top solder mask
-            <li>top silk screen
-            <li>bottom copper
-            <li>bottom solder mask
-            <li>bottom silk screen
-            <li>board outline or fab drawing
-            <li>drill file
-        </ul-->
-    <li>XYRS - should contain reference designator, x and y location, side and rotation
-</ul>
-
-
-  </div>
+    </div>

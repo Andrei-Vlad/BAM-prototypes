@@ -4,26 +4,29 @@
 	<meta charset="utf-8">
 	<title>BAM-Pircing</title>
 	<script type="text/javascript" src="../assets/scripts/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="sass/main.css">
+	<link rel="stylesheet" type="text/css" href="../sass/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../sass/pricing.css">
 	
 </head>
 <body>
 	<header>
-			<a href="/">
-  <!--   <img src="../assets/images/BAMLogo-nobox.png" alt="BAM Prototypes" class="noprint"> -->
-    <img src="../assets/images/BAMLogo.png" alt="BAM Prototypes" class="onlyprint">
-</a>
-<img src="../assets/images/board.jpeg" id="bg_nav">
-<nav class="nav_bar">
-<div id="menu1" class=" menu">
-	<a href="/">Home</a>
-	<a href="pricing.html" class="current">Pricing</a>
-	<a href="capabilities.html" class="">Capabilities</a>
-	<a href="quote.html" class="">Request Quote</a>
-	<a href="about.html" class="">About</a>
-</div>
-</nav>
+				<img src="../assets/images/2.jpeg" id="bg_nav"> 
 
+	<nav class=" navbar navbar-light" style="background-color: rgba(240,255,255, 0.3);">
+	<a class="navbar-brand" href="/">
+	  <!--   <img src="../assets/images/BAMLogo-nobox.png" alt="BAM Prototypes" class="noprint"> -->
+	    <img src="../assets/images/BAMLogo-nobox.png" alt="BAM Prototypes"  width="110" height="60" class="img_logo" alt=""	>
+	</a>
+		<div id="menu1" class=" menu">
+			<a href="pricing.html" class="current">Pricing</a>
+			<a href="capabilities.html" class="">Capabilities</a>
+			<a href="quote.html" class="">Request Quote</a>
+			<a href="about.html" class="">About</a>
+		</div>
+	</nav>
+
+	<div class="logo-mid d-flex p-2 align-bottom"><h2 class="display-2 mx-auto ">Your Logo is here</h2></div>
 		<!-- 
 
 		<div id="top" class="main_div" style="background:url(/assets/images/board_in_machine.jpeg)">
@@ -56,10 +59,10 @@
  -->
 	</header>
 
-	<main>	
+	<main class="container-fluid">	
 
-		  <div id="content" class="main_div">
-<script type="text/javascript" src="/assets/scripts/pricing.js"></script>
+		<script type="text/javascript" src="../assets/scripts/pricing.js"></script>
+  <div id="content" class="main_div">
 
 <h1>PCB Assembly Pricing</h1>
 <p>
@@ -90,17 +93,6 @@ however, please ask for a quotation to receive an exact price.
       <td><label for="pcbs">Number of PCB's</label></td>
       <td><input type="text" id="pcbs" size="3"></td>
     </tr>
-
-
-
-
-
-
-
-
-
-
-
 
     <tr>
       <td><label for="sides">Two sided</label></td>
@@ -178,11 +170,18 @@ Lead time is the number of working days that pass from the time all materials ar
 Shipping as quoted is via UPS Express (1-2 days in transit) to Western Europe and the USA.
 Lower costs (to Europe) are possible via DPD.
 </p>
-<h1>Turn-Key Services</h1>
-BAM Prototypes offers full or partial turn-key services.
-In keeping with our tradition of offering exellent value, 
-we can procure components and pcb's at cost.
+
+
+<div class="card w-50">
+  <div class="card-body" style="height:inherit;">
+    <h4 class="card-title">Turn-Key Services</h4>
+    <p class="card-text">BAM Prototypes offers full or partial turn-key services.
+    In keeping with our tradition of offering exellent value, we can procure components and pcb's at cost.</p>
   </div>
+</div>
+
+</div>
+
 
 	</main>
 
@@ -191,6 +190,8 @@ we can procure components and pcb's at cost.
 	</footer>
 
 </body>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </html>

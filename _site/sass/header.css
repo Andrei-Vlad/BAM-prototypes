@@ -1,0 +1,67 @@
+
+html{
+    margin: 0px;
+    padding: 0px;
+    /*background: rgba(0,0,0, 0,4) url("../assets/images/board.jpeg") repeat fixed center;*/
+}
+main{
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    height: 350px;
+}
+
+
+a:visited, a:link {
+    text-decoration: none;
+}
+.menu a{
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 4px;
+    padding: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.menu a:hover{
+    text-decoration: none;
+    color:#000;
+}
+
+#bg_nav{
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    -webkit-filter: opacity(.2);
+    filter: opacity(.5);
+}
+
+.current{
+    border-radius: 5px;
+}
+.img_logo{
+    float: left;
+    left: 25px !important ;
+}
+
+.logo-mid{
+
+}
+
+.top_side_bar{
+    position: absolute;
+    background-color: ;
+}
+
+
+/*CSS for body*/
+
+.main_div{
+    padding: 15px;
+    margin-left: -10px;
+}
